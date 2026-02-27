@@ -5,7 +5,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* body {
+body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
   min-height: 100vh;
@@ -21,7 +21,11 @@
   border-radius: 10px;
 }
 
-.card .card__img {
+.card__img--desktop {
+  display: none;
+}
+
+.card .card__img--mobile {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
@@ -66,6 +70,7 @@
 
 .card__price-original {
   color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
 }
 
 .card__button {
@@ -85,11 +90,33 @@
 .card__button:hover {
   cursor: pointer;
   background-color: hsl(158, 42%, 18%);
-} */
+}
 
 /* Desktop view */
 @media screen and (min-width: 768px) {
   body {
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    max-width: 550px;
+  }
+
+  .card__img--mobile {
+    display: none;
+  }
+  .card__img--desktop {
+    display: block;
+    width: 50%;
+  }
+
+  .card__content {
+    width: 50%;
+  }
+}
+
+/* body {
     background-color: hsl(30, 38%, 92%);
     display: flex;
     min-height: 100vh;
@@ -106,9 +133,12 @@
     overflow: hidden;
   }
 
-  .card .card__img {
+  .card .card__img--desktop {
     width: 50%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 0 10px;
     display: block;
   }
-}
+
+  .card__img--mobile {
+    display: none;
+  } */

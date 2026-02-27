@@ -12,30 +12,43 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <div class="card">
-      <img class="card__img" src="images/image-product-mobile.jpg" alt="Product Image"></img>
+      <img
+        class="card__img card__img--mobile"
+        src="images/image-product-mobile.jpg"
+        alt="Product Image"
+      />
+      <img
+        class="card__img card__img--desktop"
+        src="images/image-product-desktop.jpg"
+        alt="Product Image"
+      />
       <div class="card__content">
         <section class="card__category">P E R F U M E</section>
         <h2 class="card__title">Gabrielle Essence Eau De Parfum</h2>
-        <p class="card__description">A floral, solar and voluptuous
-          interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-          CHANEL.</p>
+        <p class="card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
         <section class="card__price">
           <span class="card__price-current">$149.99</span>
           <span class="card__price-original">$169.99</span>
         </section>
-        <button class="card__button"> <img src="images/icon-cart.svg" alt="">Add to Cart</button>
+        <button class="card__button">
+          <img src="images/icon-cart.svg" alt="" />Add to Cart
+        </button>
       </div>
-      
     </div>
-         
   </body>
 </html>
